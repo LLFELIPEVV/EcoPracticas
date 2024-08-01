@@ -1,0 +1,136 @@
+body {
+    background-color: #d3d3d3;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto Slab", serif;
+    font-size: 17px;
+    text-wrap: pretty;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+p {
+    margin: 10px 0;
+}
+
+div.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 4%;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 55%;
+    background-color: #ffffff;
+    flex-grow: 1;
+}
+
+div.container h1 {
+    color: #4CAF50;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    margin: 1% 0;
+    text-wrap: wrap;
+}
+
+div.container h2.subtitulos {
+    color: #FFA500;
+    margin: 0;
+}
+
+div.container h4 {
+    font-size: 18px;
+    margin: 0;
+}
+
+div.container section.temas {
+    display: flex;
+    flex-direction: row;
+}
+
+div.container section.temas div.text {
+    width: 100%;
+}
+
+div.container section.temas div.image {
+    width: 35%;
+    margin-left: 15px;
+    margin-bottom: 0;
+    height: auto;
+    float: right;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+    border: 3px solid #87CEEB;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+footer {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-content h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    padding: 0;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+@media (max-width: 992px) {
+    div.container {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 3%;
+        border: 1px solid black;
+        border-radius: 15px;
+        width: 85%;
+        background-color: #ffffff;
+        flex-grow: 1;
+    }
+
+    div.container section.temas div.text {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    div.container section.temas div.image {
+        float: none;
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 80%;
+        height: auto;
+    }
+
+    img {
+        margin-top: 0;
+        max-width: 100%;
+        height: auto;
+    }
+
+}
